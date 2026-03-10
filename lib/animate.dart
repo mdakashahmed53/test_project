@@ -17,7 +17,12 @@ class _MyAnimateState extends State<MyAnimate> {
       body: Column(
         children: [
           Container(
-            
+            height: 150,
+            width: 150,
+            decoration: BoxDecoration(
+              color: Colors.red,
+              borderRadius: BorderRadius.circular(30)
+            ),
           )
         ],
       ),
