@@ -20,7 +20,7 @@ class _MyAnimateState extends State<MyAnimate> {
             height: 150,
             width: 150,
             decoration: BoxDecoration(
-              color: Colors.red,
+              color: Colors.green,
               borderRadius: BorderRadius.circular(30)
             ),
           )
