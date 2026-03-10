@@ -10,24 +10,40 @@ class MyAnimate extends StatefulWidget {
 class _MyAnimateState extends State<MyAnimate> {
   @override
   Widget build(BuildContext context) {
+    bool  = false;
     return Scaffold(
-      appBar: AppBar(
-        title: Text('Animated'),
-      ),
+      appBar: AppBar(title: Text('Animated')),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Container(
-              height: 150,
-              width: 150,
-              decoration: BoxDecoration(
-                color: Colors.green,
-                borderRadius: BorderRadius.circular(20)
-              ),
+            AnimatedContainer(
               
+              height: 200,
+              width: 200,
+              duration: Duration(seconds: 1),
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(50),
+                color: Colors.amber,
+              ),
+              child: Container(
+                height: 150,
+                width: 150,
+                decoration: BoxDecoration(
+                  color: Colors.green,
+                  borderRadius: BorderRadius.circular(20),
+                ),
+              ),
             ),
-            ElevatedButton(onPressed: (){}, child: Text('Animate'))
+            SizedBox(height: 15),
+            ElevatedButton(
+              onPressed: () {
+                setState(() {
+                  isAnimate = !isAnimate;
+                });
+              },
+              child: Text('Animate'),
+            ),
           ],
         ),
       ),
