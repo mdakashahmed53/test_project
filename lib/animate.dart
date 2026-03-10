@@ -14,17 +14,20 @@ class _MyAnimateState extends State<MyAnimate> {
       appBar: AppBar(
         title: Text('Animated'),
       ),
-      body: Column(
-        children: [
-          Container(
-            height: 150,
-            width: 150,
-            decoration: BoxDecoration(
-              color: Colors.green,
-              borderRadius: BorderRadius.circular(30)
-            ),
-          )
-        ],
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Container(
+              height: 150,
+              width: 150,
+              decoration: BoxDecoration(
+                color: Colors.green,
+                borderRadius: BorderRadius.circular(20)
+              ),
+            )
+          ],
+        ),
       ),
     );
   }
