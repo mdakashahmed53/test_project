@@ -25,7 +25,9 @@ class _MyAnimateState extends State<MyAnimate> {
                 color: Colors.green,
                 borderRadius: BorderRadius.circular(20)
               ),
-            )
+              
+            ),
+            ElevatedButton(onPressed: (){}, child: Text('Animate'))
           ],
         ),
       ),
